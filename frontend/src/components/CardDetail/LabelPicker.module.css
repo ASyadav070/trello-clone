@@ -1,0 +1,135 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sectionHeader {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.attachedLabels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.labelChip {
+  height: 32px;
+  min-width: 48px;
+  padding: 0 12px;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.addButton {
+  height: 32px;
+  width: 32px;
+  border-radius: 4px;
+  background-color: rgba(9, 30, 66, 0.04);
+  color: var(--color-text-main);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.addButton:hover {
+  background-color: rgba(9, 30, 66, 0.08); /* Native hover match */
+}
+
+/* Base Popover */
+.popoverOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1001; /* Must sit above root modal */
+}
+
+.popoverMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 8px;
+  width: 300px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1002;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.popoverHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 8px;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--color-text-muted);
+}
+
+.labelsList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.labelOption {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.colorBlock {
+  flex: 1;
+  height: 32px;
+  border-radius: 4px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  transition: opacity 0.2s;
+}
+
+.colorBlock:hover {
+  opacity: 0.8;
+}
+
+.checkIcon {
+  position: absolute;
+  right: 12px;
+  color: white;
+  font-weight: bold;
+}

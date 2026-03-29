@@ -1,0 +1,25 @@
+:root {
+  /* Board & Backgrounds */
+  --color-bg-board: #0052cc;
+  --color-bg-canvas: #0052cc;
+  
+  /* Layout Surfaces */
+  --color-list: #f1f2f4;
+  --color-card: #ffffff;
+  
+  /* Theming & Accents */
+  --color-primary: #0c66e4;
+  --color-danger: #ca3521;
+  
+  /* Typography */
+  --color-text-main: #172b4d;
+  --color-text-muted: #626f86;
+  
+  /* Borders & Borders */
+  --color-border: #dfe1e6;
+  
+  /* Radii & Shadows */
+  --radius-card: 8px;
+  --radius-list: 12px;
+  --shadow-card: 0 1px 2px rgba(0,0,0,0.15);
+}

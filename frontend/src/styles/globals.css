@@ -1,0 +1,29 @@
+@import './variables.css';
+
+/* Strict Native Standard Margin Reset and Setup */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: var(--color-bg-canvas);
+  color: var(--color-text-main);
+  /* Prevent scroll bouncing on mobile specifically since board handles X scrolling */
+  overscroll-behavior-x: none;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}

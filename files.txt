@@ -1,0 +1,12 @@
+D:\Scaler\backend\src\repositories\boardRepository.js
+D:\Scaler\backend\src\repositories\cardRepository.js
+D:\Scaler\backend\src\repositories\checklistRepository.js
+D:\Scaler\backend\src\repositories\labelRepository.js
+D:\Scaler\backend\src\repositories\listRepository.js
+D:\Scaler\backend\src\repositories\memberRepository.js
+D:\Scaler\frontend\src\store\useBoardStore.js
+D:\Scaler\_frontend_src_backup\store\useBoardStore.js
+D:\Scaler\frontend\src\hooks\useSearch.js
+D:\Scaler\_frontend_src_backup\hooks\useSearch.js
+D:\Scaler\frontend\src\hooks\useDragDrop.js
+D:\Scaler\_frontend_src_backup\hooks\useDragDrop.js

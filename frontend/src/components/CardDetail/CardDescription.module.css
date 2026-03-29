@@ -1,0 +1,79 @@
+.container {
+  width: 100%;
+}
+
+.header {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--color-text-main);
+  /* Mimic an icon layout margin organically */
+  padding-left: 8px;
+}
+
+.displayArea {
+  padding: 8px 12px;
+  min-height: 48px;
+  background-color: rgba(9, 30, 66, 0.04);
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: pre-wrap;
+  color: var(--color-text-main);
+}
+
+.displayArea:hover {
+  background-color: rgba(9, 30, 66, 0.08);
+}
+
+.emptyText {
+  color: var(--color-text-muted);
+}
+
+.editArea {
+  width: 100%;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 108px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 2px solid var(--color-primary);
+  font-family: inherit;
+  font-size: 14px;
+  resize: vertical;
+  background: white;
+  outline: none;
+  color: var(--color-text-main);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  align-items: center;
+}
+
+.saveButton {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  border: none;
+}
+
+.saveButton:hover {
+  background-color: #0b54cd;
+}
+
+.cancelButton {
+  color: var(--color-text-main);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.cancelButton:hover {
+  background-color: rgba(9, 30, 66, 0.08); /* Transparent hover matching Trello */
+}

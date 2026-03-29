@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  min-height: 24px;
+}
+
+.leftMeta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--color-text-muted);
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.overdue {
+  color: white;
+  background-color: var(--color-danger, #f87462);
+  font-weight: 500;
+}
+
+.complete {
+  color: white;
+  background-color: var(--color-success, #4bce97);
+  font-weight: 500;
+}
+
+.rightMeta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* Stack avatars negatively identically mimicking native mappings */
+}
+
+.avatar {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  margin-left: -4px; /* Trello stacking effect */
+}

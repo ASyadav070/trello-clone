@@ -1,0 +1,143 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.header {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text-main);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Progress Tracking */
+.progressWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.percentageNum {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  width: 32px;
+}
+
+.progressBarTrack {
+  flex: 1;
+  height: 8px;
+  background-color: rgba(9, 30, 66, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressBarFill {
+  height: 100%;
+  background-color: var(--color-primary);
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.progressBarFill.complete {
+  background-color: var(--color-success, #4bce97); /* Green upon 100% complete */
+}
+
+/* Individual Item Rows */
+.itemsList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.itemRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.itemTitle {
+  flex: 1;
+  font-size: 14px;
+  color: var(--color-text-main);
+  word-wrap: break-word;
+}
+
+.itemTitle.checked {
+  text-decoration: line-through;
+  color: var(--color-text-muted);
+}
+
+.deleteButton {
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  color: var(--color-danger, #f87462);
+}
+
+/* Add Item Form */
+.addForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.addInput {
+  padding: 8px;
+  border: 2px solid var(--color-primary);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.addButtonGroup {
+  display: flex;
+  gap: 8px;
+}
+
+.saveButton {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  border: none;
+}
+
+.cancelButton {
+  background: none;
+  color: var(--color-text-main);
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+}
+
+.triggerButton {
+  align-self: flex-start;
+  background-color: rgba(9, 30, 66, 0.04);
+  color: var(--color-text-main);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  border: none;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.triggerButton:hover {
+  background-color: rgba(9, 30, 66, 0.08);
+}

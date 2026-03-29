@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.labelChip {
+  height: 8px;
+  width: 40px;
+  border-radius: 4px;
+  background-color: var(--color-primary); /* Fallback safety */
+}
+
+/* Enhances hoverability safely visually responding slightly mapping Trello behavior */
+.labelChip:hover {
+  height: 16px;
+  margin-bottom: -8px; /* Counteract layout shift */
+  transition: all 0.2s ease;
+}

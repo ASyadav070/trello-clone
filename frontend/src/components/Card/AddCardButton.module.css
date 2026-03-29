@@ -1,0 +1,81 @@
+.triggerButton {
+  margin: 4px 8px 8px 8px;
+  padding: 6px 8px;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  color: var(--color-text-muted, #5e6c84);
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  width: calc(100% - 16px);
+  text-align: left;
+  transition: all 0.2s;
+}
+
+.triggerButton:hover {
+  background-color: rgba(9, 30, 66, 0.08); /* Matches List background */
+  color: var(--color-text-main, #172b4d);
+}
+
+.plusIcon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.formContainer {
+  margin: 0 8px 8px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.textarea {
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  padding: 8px;
+  box-shadow: 0 1px 4px rgba(9, 30, 66, 0.25);
+  font-size: 14px;
+  font-family: inherit;
+  resize: none;
+  outline: none;
+}
+
+.textarea:focus {
+  border-bottom: 2px solid var(--color-primary); /* Simulating focus states */
+  margin-bottom: -2px; /* Prevent layout shift */
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.addBtn {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cancelBtn {
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+.cancelBtn:hover {
+  color: var(--color-text-main);
+}

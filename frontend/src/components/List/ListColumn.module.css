@@ -1,0 +1,50 @@
+.column {
+  width: 272px;
+  min-width: 272px;
+  background-color: var(--color-list);
+  border-radius: var(--radius-list);
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+.header {
+  padding: 10px 12px;
+  font-weight: 600;
+  color: var(--color-text-main);
+  /* The drag handle area */
+  cursor: grab;
+}
+
+.cardContainer {
+  padding: 0 8px 8px 8px;
+  /* Allow cards to scroll if the list is exceedingly long */
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* Ensures we still have an active drop target even if list is empty */
+  min-height: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (max-width: 900px) {
+  .column {
+    width: 240px;
+    min-width: 240px;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    width: 85vw;
+    min-width: 85vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .column {
+    width: 100%;
+    min-width: 100%;
+  }
+}
